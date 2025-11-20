@@ -8,6 +8,7 @@ GEM
   specs:
     ast (2.4.3)
     date (3.5.0)
+    diff-lcs (1.6.2)
     erb (6.0.0)
     gosu (1.4.6)
     io-console (0.8.1)
@@ -18,10 +19,12 @@ GEM
     json (2.16.0)
     language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
+    minitest (5.26.2)
     parallel (1.27.0)
     parser (3.3.10.0)
       ast (~> 2.4.1)
       racc
+    power_assert (3.0.1)
     pp (0.6.3)
       prettyprint
     prettyprint (0.2.0)
@@ -39,6 +42,19 @@ GEM
     regexp_parser (2.11.3)
     reline (0.6.3)
       io-console (~> 0.5)
+    rspec (3.13.2)
+      rspec-core (~> 3.13.0)
+      rspec-expectations (~> 3.13.0)
+      rspec-mocks (~> 3.13.0)
+    rspec-core (3.13.6)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.5)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-mocks (3.13.7)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-support (3.13.6)
     rubocop (1.81.7)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
@@ -55,6 +71,8 @@ GEM
       prism (~> 1.4)
     ruby-progressbar (1.13.0)
     stringio (3.1.8)
+    test-unit (3.7.1)
+      power_assert
     tsort (0.2.0)
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
@@ -67,8 +85,11 @@ DEPENDENCIES
   TestTools!
   gosu (~> 1.4)
   irb
+  minitest
   rake (~> 13.0)
+  rspec
   rubocop (~> 1.21)
+  test-unit
 
 BUNDLED WITH
    2.7.2
