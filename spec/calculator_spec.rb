@@ -1,5 +1,5 @@
 # spec/calculator_spec.rb
-require 'calculator'
+require 'TestTools'
 
 RSpec.describe Calculator do
   it 'telt twee getallen op' do
